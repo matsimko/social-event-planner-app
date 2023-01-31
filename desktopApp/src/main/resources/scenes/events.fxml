@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventController">
+   <children>
+      <TabPane fx:id="tabPane" styleClass="main" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="myParticipationsTabNode" text="%myParticipations">
+      		<fx:include fx:id="myParticipationsTab" source="myParticipationsTab.fxml" />
+      	</Tab>
+      	<Tab fx:id="organizedEventsTabNode" text="%organizedEvents">
+      		<fx:include fx:id="organizedEventsTab" source="organizedEventsTab.fxml" />
+      	</Tab>
+          <Tab fx:id="allEventsTabNode" text="%allEvents">
+            <fx:include fx:id="allEventsTab" source="allEventsTab.fxml" />
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ProgressIndicator fx:id="progressIndicator" visible="false" />
+   </children>
+</StackPane>

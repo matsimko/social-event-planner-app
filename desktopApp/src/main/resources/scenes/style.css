@@ -1,0 +1,20 @@
+
+/* universal selector would override the class selector for the title for some reason...*/
+.main {
+  -fx-font: 16px "Verdana";
+  -fx-text-fill: black;	
+}
+
+
+.title {
+  -fx-font-size: 30px;
+}
+
+.subtitle {
+  -fx-font-size: 24px;
+}
+
+.error {
+  -fx-text-fill: red;
+  -fx-font-style: italic;
+}

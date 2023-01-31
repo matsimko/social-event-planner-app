@@ -1,0 +1,11 @@
+quarkus:
+  http:
+    port: 8000
+  datasource:
+    db-kind: derby
+    jdbc:
+      url: jdbc:derby:./db;create=true
+      driver: org.apache.derby.jdbc.EmbeddedDriver
+  hibernate-orm:
+    database:
+      generation: drop-and-create
